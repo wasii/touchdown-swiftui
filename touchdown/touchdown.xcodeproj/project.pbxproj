@@ -22,6 +22,11 @@
 		C644D33D27F573E50007E679 /* FooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C644D33C27F573E50007E679 /* FooterView.swift */; };
 		C644D33F27F576A80007E679 /* NavigationBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C644D33E27F576A80007E679 /* NavigationBarView.swift */; };
 		C644D34127F5779A0007E679 /* LogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C644D34027F5779A0007E679 /* LogoView.swift */; };
+		C644D34327F57ED10007E679 /* PlayerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C644D34227F57ED10007E679 /* PlayerModel.swift */; };
+		C644D34527F57EFD0007E679 /* CodableBundleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C644D34427F57EFD0007E679 /* CodableBundleExtension.swift */; };
+		C644D34727F580560007E679 /* FeatureItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C644D34627F580560007E679 /* FeatureItemView.swift */; };
+		C644D34927F580FA0007E679 /* FeaturedTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C644D34827F580FA0007E679 /* FeaturedTabView.swift */; };
+		C644D34B27F584FE0007E679 /* CategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C644D34A27F584FE0007E679 /* CategoryModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +66,11 @@
 		C644D33C27F573E50007E679 /* FooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterView.swift; sourceTree = "<group>"; };
 		C644D33E27F576A80007E679 /* NavigationBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarView.swift; sourceTree = "<group>"; };
 		C644D34027F5779A0007E679 /* LogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoView.swift; sourceTree = "<group>"; };
+		C644D34227F57ED10007E679 /* PlayerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerModel.swift; sourceTree = "<group>"; };
+		C644D34427F57EFD0007E679 /* CodableBundleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableBundleExtension.swift; sourceTree = "<group>"; };
+		C644D34627F580560007E679 /* FeatureItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureItemView.swift; sourceTree = "<group>"; };
+		C644D34827F580FA0007E679 /* FeaturedTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedTabView.swift; sourceTree = "<group>"; };
+		C644D34A27F584FE0007E679 /* CategoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,6 +194,8 @@
 				C644D33C27F573E50007E679 /* FooterView.swift */,
 				C644D33E27F576A80007E679 /* NavigationBarView.swift */,
 				C644D34027F5779A0007E679 /* LogoView.swift */,
+				C644D34627F580560007E679 /* FeatureItemView.swift */,
+				C644D34827F580FA0007E679 /* FeaturedTabView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -198,6 +210,8 @@
 		C644D33727F573400007E679 /* Modals */ = {
 			isa = PBXGroup;
 			children = (
+				C644D34227F57ED10007E679 /* PlayerModel.swift */,
+				C644D34A27F584FE0007E679 /* CategoryModel.swift */,
 			);
 			path = Modals;
 			sourceTree = "<group>";
@@ -205,6 +219,7 @@
 		C644D33827F573450007E679 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				C644D34427F57EFD0007E679 /* CodableBundleExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -351,12 +366,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C644D34727F580560007E679 /* FeatureItemView.swift in Sources */,
+				C644D34527F57EFD0007E679 /* CodableBundleExtension.swift in Sources */,
 				C644D30227F571080007E679 /* ContentView.swift in Sources */,
 				C644D34127F5779A0007E679 /* LogoView.swift in Sources */,
 				C644D33D27F573E50007E679 /* FooterView.swift in Sources */,
 				C644D30027F571080007E679 /* touchdownApp.swift in Sources */,
 				C644D33B27F573620007E679 /* Constant.swift in Sources */,
+				C644D34B27F584FE0007E679 /* CategoryModel.swift in Sources */,
 				C644D33F27F576A80007E679 /* NavigationBarView.swift in Sources */,
+				C644D34927F580FA0007E679 /* FeaturedTabView.swift in Sources */,
+				C644D34327F57ED10007E679 /* PlayerModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
