@@ -24,6 +24,7 @@ struct ContentView: View {
                         FeaturedTabView()
                             .frame(height: UIScreen.main.bounds.width / 1.6)
                             .padding(.vertical, 0)
+                        CategoryGridView()
                         FooterView()
                             .padding(.horizontal)
                         

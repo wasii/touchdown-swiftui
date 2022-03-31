@@ -13,7 +13,7 @@ struct LogoView: View {
     //MARK: - body
     var body: some View {
         HStack(spacing: 4) {
-            Text("Touch".uppercased())
+            Text("E".uppercased())
                 .font(.title3)
                 .foregroundColor(.black)
                 .fontWeight(.black)
@@ -21,7 +21,7 @@ struct LogoView: View {
                 .resizable()
                 .scaledToFit()
                 .frame(width: 30, height: 30, alignment: .center)
-            Text("Down".uppercased())
+            Text("Commerce".uppercased())
                 .font(.title3)
                 .foregroundColor(.black)
                 .fontWeight(.black)
