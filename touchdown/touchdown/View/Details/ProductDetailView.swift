@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ProductDetailView: View {
+    let product: Product
     var body: some View {
         VStack(alignment: .leading, spacing: 5) {
             //NAVBAR
@@ -20,13 +21,33 @@ struct ProductDetailView: View {
             //Detail Top bar
             TopbarDetailView()
                 .padding(.horizontal)
+                .zIndex(1 )
             //Detail Bottom Bar
-            //Description
-            //Quantity + Favourite
-            
-            Spacer()
-            //Add to Cart
+            VStack(alignment: .leading, spacing: 0, content: {
+                
+                //rating+sizes
+                RatingSizedDetailView()
+                    .padding(.top, -20)
+                    .padding(.bottom, 10)
+                //Description
+                ScrollView(.vertical, showsIndicators: false) {
+                    Text(sampleProduct.description)
+                        .font(.system(.body, design: .rounded))
+                        .foregroundColor(.gray)
+                        .multilineTextAlignment(.leading)
+                }
+                //Quantity + Favourite
+                //Add to Cart
+                Spacer()
+            })
+            .padding(.horizontal)
+            .background(
+                Color.white
+                    .clipShape(CustomShape())
+                    .padding(.top, -105)
+            )
         }
+        .zIndex(0)
         .ignoresSafeArea(.all, edges: .all)
         .background(
             Color(red: sampleProduct.red, green: sampleProduct.green, blue: sampleProduct.blue)
@@ -36,7 +57,7 @@ struct ProductDetailView: View {
 
 struct ProductDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        ProductDetailView()
+        ProductDetailView(product: sampleProduct)
             .previewLayout(.fixed(width: 375, height: 812))
     }
 }

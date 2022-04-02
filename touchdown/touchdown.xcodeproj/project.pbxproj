@@ -37,6 +37,8 @@
 		C65C9FC327F5C4B30094E895 /* DetailViewNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65C9FC227F5C4B30094E895 /* DetailViewNavigationBar.swift */; };
 		C65C9FC527F5C5980094E895 /* HeaderDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65C9FC427F5C5980094E895 /* HeaderDetailView.swift */; };
 		C65C9FC727F5C64F0094E895 /* TopbarDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65C9FC627F5C64F0094E895 /* TopbarDetailView.swift */; };
+		C65C9FC927F5C9490094E895 /* CustomShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65C9FC827F5C9490094E895 /* CustomShape.swift */; };
+		C65C9FCB27F5CA850094E895 /* RatingSizedDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65C9FCA27F5CA850094E895 /* RatingSizedDetailView.swift */; };
 		C67CFFDD27F5970E00F3BC41 /* Brand.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67CFFDC27F5970E00F3BC41 /* Brand.swift */; };
 		C67CFFDF27F5973800F3BC41 /* BrandItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67CFFDE27F5973800F3BC41 /* BrandItemView.swift */; };
 		C67CFFE127F5981E00F3BC41 /* BrandGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67CFFE027F5981E00F3BC41 /* BrandGridView.swift */; };
@@ -94,6 +96,8 @@
 		C65C9FC227F5C4B30094E895 /* DetailViewNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewNavigationBar.swift; sourceTree = "<group>"; };
 		C65C9FC427F5C5980094E895 /* HeaderDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderDetailView.swift; sourceTree = "<group>"; };
 		C65C9FC627F5C64F0094E895 /* TopbarDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopbarDetailView.swift; sourceTree = "<group>"; };
+		C65C9FC827F5C9490094E895 /* CustomShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomShape.swift; sourceTree = "<group>"; };
+		C65C9FCA27F5CA850094E895 /* RatingSizedDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingSizedDetailView.swift; sourceTree = "<group>"; };
 		C67CFFDC27F5970E00F3BC41 /* Brand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Brand.swift; sourceTree = "<group>"; };
 		C67CFFDE27F5973800F3BC41 /* BrandItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandItemView.swift; sourceTree = "<group>"; };
 		C67CFFE027F5981E00F3BC41 /* BrandGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandGridView.swift; sourceTree = "<group>"; };
@@ -240,6 +244,7 @@
 				C65C9FC227F5C4B30094E895 /* DetailViewNavigationBar.swift */,
 				C65C9FC427F5C5980094E895 /* HeaderDetailView.swift */,
 				C65C9FC627F5C64F0094E895 /* TopbarDetailView.swift */,
+				C65C9FCA27F5CA850094E895 /* RatingSizedDetailView.swift */,
 			);
 			path = Details;
 			sourceTree = "<group>";
@@ -267,6 +272,7 @@
 			isa = PBXGroup;
 			children = (
 				C644D33A27F573620007E679 /* Constant.swift */,
+				C65C9FC827F5C9490094E895 /* CustomShape.swift */,
 			);
 			path = Utitlities;
 			sourceTree = "<group>";
@@ -419,12 +425,14 @@
 				C644D33B27F573620007E679 /* Constant.swift in Sources */,
 				C644D34F27F5883B0007E679 /* CategoryGridView.swift in Sources */,
 				C644D34B27F584FE0007E679 /* CategoryModel.swift in Sources */,
+				C65C9FCB27F5CA850094E895 /* RatingSizedDetailView.swift in Sources */,
 				C644D35527F590B50007E679 /* Product.swift in Sources */,
 				C65C9FC727F5C64F0094E895 /* TopbarDetailView.swift in Sources */,
 				C67CFFDF27F5973800F3BC41 /* BrandItemView.swift in Sources */,
 				C644D33F27F576A80007E679 /* NavigationBarView.swift in Sources */,
 				C644D35127F589EC0007E679 /* SectionView.swift in Sources */,
 				C65C9FC327F5C4B30094E895 /* DetailViewNavigationBar.swift in Sources */,
+				C65C9FC927F5C9490094E895 /* CustomShape.swift in Sources */,
 				C644D34D27F586400007E679 /* CategoryItemView.swift in Sources */,
 				C644D34927F580FA0007E679 /* FeaturedTabView.swift in Sources */,
 				C644D34327F57ED10007E679 /* PlayerModel.swift in Sources */,
