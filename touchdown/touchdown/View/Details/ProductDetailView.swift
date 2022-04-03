@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ProductDetailView: View {
-    let product: Product
+    @EnvironmentObject var shop: Shop
     var body: some View {
         VStack(alignment: .leading, spacing: 5) {
             //NAVBAR
@@ -31,7 +31,7 @@ struct ProductDetailView: View {
                     .padding(.bottom, 10)
                 //Description
                 ScrollView(.vertical, showsIndicators: false) {
-                    Text(sampleProduct.description)
+                    Text(shop.selectedProduct?.description ?? "")
                         .font(.system(.body, design: .rounded))
                         .foregroundColor(.gray)
                         .multilineTextAlignment(.leading)
@@ -55,14 +55,15 @@ struct ProductDetailView: View {
         .zIndex(0)
         .ignoresSafeArea(.all, edges: .all)
         .background(
-            Color(red: sampleProduct.red, green: sampleProduct.green, blue: sampleProduct.blue)
+            Color(red: shop.selectedProduct?.red ?? 0.0, green: shop.selectedProduct?.green ?? 0.0, blue: shop.selectedProduct?.blue ?? 0.0)
         ).ignoresSafeArea(.all, edges: .all)
     }
 }
 
 struct ProductDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        ProductDetailView(product: sampleProduct)
+        ProductDetailView()
+            .environmentObject(Shop())
             .previewLayout(.fixed(width: 375, height: 812))
     }
 }
